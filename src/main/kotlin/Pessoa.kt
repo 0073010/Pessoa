@@ -4,19 +4,16 @@ class Pessoa {
     var cpf: String = "123.123.123.45"
         private set
 
-    inner class Endereço {
-        var rua: String = "Rua teste"
-    }
+    constructor()
 
+    fun unenomecpf() = "$nome e $cpf"
+
+ }
 }
 
 fun main() {
-    val Camila = Pessoa()
-    Camila.cpf ="4567"
+    val Camila = Pessoa
 
-    println(Camila)
-    println(Camila.nome)
-    println(Camila.cpf)
+    println(Camila.Pessoainfo())
 
-    println(Camila.Endereço().rua)
 }
